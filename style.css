@@ -1,0 +1,203 @@
+/* html {
+    background-color: red;
+} */
+
+/*import the font for the whole page*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Averia+Serif+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Averia Serif Libre, cursive;
+    color: #777;
+}
+
+/*get rid of the default paddings and margins*/
+html, body {
+    margin:0;
+    padding: 0;
+}
+.nav ul {
+    margin:0;
+}
+
+.nav li {
+    display: inline; /*same line*/
+}
+
+.nav a {
+    display: inline-block; /*allow for padding from top and bottom (inline elements only have padding on the line)*/
+    padding: .5em; /*space them out*/
+    color: white;
+    text-decoration: none; /*remove the underline*/
+}
+
+/*change backgroud colour when hovered over*/
+.nav a:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em; /*1.1 times bigger than default size*/
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li {
+    padding: 0 5%; /*top-bottom left-right*/
+}
+
+.band-name {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    font-size: 4em;
+    font-family:'Audiowide', cursive;
+    font-weight: normal;
+}
+
+.band-name-large {
+    font-size: 7em;
+}
+
+.main-header {
+    background-color: rgba(0,0,0,.6); /*last param is transparency*/
+    background-image: url("images/header_back2.jfif");
+    background-blend-mode: multiply; /*adding this allows us to mix a background color and image*/
+    background-size: cover; /*make the image fit the cover*/
+    padding-bottom: 30px; /*add 30px down of image*/
+}
+
+.content-section {
+    margin: 1em;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto; /*keep the text in the center*/
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family:  'Train One', cursive;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-img {
+    float: left; /*img on the left and text flows on its right*/
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 30%; /*make a circle border for 30% of each edge*/
+}
+
+.main-footer {
+    background-color: rgba(2, 42, 94, 0.986);
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex; 
+    align-items: center;
+}
+
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align:center; /*horizontally*/
+    vertical-align: middle; /*vertically*/
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%; /*top right bottom left*/
+    color: white;
+    border: 2px solid #034a70;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.btn-play {
+    display: block; /*a buton is not a block element so cannot have an auto margin by default*/
+    margin: 0 auto;
+    font-size: 4em;
+    border-radius: 50%;
+    padding:0; /*remove default padding*/
+    color: #034a70;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1em; /*space between row-text and row-border*/
+    margin-bottom: 1em; /*space between row-border and following stuff*/
+}
+
+.tour-row:last-child {
+    border-bottom: none; /*no border for the last*/
+}
+
+.tour-item {
+    display: inline-block; /*is inline but can aslo have a widht/height like a blick element*/
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%; /*11% of the screen*/
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #034a70;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #002b42;
+}
+

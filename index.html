@@ -5,77 +5,69 @@
         <title>DAMSO</title><!--title of the tab-->
         <meta name="description" contents="This is the description"><!--here we add a description of the website shown 
         under the website's name in a google search-->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body><!--all the info to display (text, images...)-->
-        <header>
-            <nav> <!--navigation section-->
+        <header class="main-header">
+            <nav class="nav main-nav"> <!--navigation section-->
                 <ul><!--unordered list (ol for ordered list)-->
                     <li><a href="index.html">HOME</a></li><!--list items in the ul (or ol)-->
                     <li><a href="store.html">STORE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <hr><!--empty element for the horizontal rule (line)-->
-            <h1>Damso</h1><!--heading element of size 1 (largest)-->
-            <button type="button">Get our latest album</button> <!--different types of buttons-->
-            <br><!--line break tag-->
-            <br>
-            <!-- TODO: Find a suitable background image-->
-            <button type="button">&#9658;</button><!--'play' entity element-->
+            <!--<hr>empty element for the horizontal rule (line) but done with CSS-->
+            <h1 class="band-name band-name-large">Damso</h1><!--heading element of size 1 (largest)-->
+            <div class="container">
+                <button class="btn btn-header" type="button">Get the latest album</button> <!--different types of buttons-->
+            </div>
+            <button class="btn btn-header btn-play" type="button">&#9658;</button><!--'play' entity element-->
         </header>
-        <section>
-            <h2>Tours</h2>
+        <section class="content-section container">
+            <h2 class="section-header">Tours</h2>
             <div><!--group the tours dates list together-->
-                <div><!--an additionnal div for each row-->
-                    <strong>JUL 16</strong><!--bold-->
-                    &lt;&gt; <!--add those entities to put some space between elements-->
-                    <span>PARIS</span>
-                    &lt;&gt;
-                    <span>ACCOR HOTELS ARENA</span>
-                    &lt;&gt;
-                    <button type="button">BUY TICKETS</button>
-                    <hr>
+                <div class="tour-row"><!--an additionnal div for each row-->
+                    <span class="tour-item tour-date">JUL 16</span>
+                    <!-- &lt;&gt; add those entities to put some space between elements but done in CSS-->
+                    <span class="tour-item tour-city">PARIS</span>
+                    <span class="tour-item tour-arena">ACCOR HOTELS ARENA</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY TICKETS</button>
                 </div>
-                <div><!--an additionnal div for each row-->
-                    <strong>JUL 19</strong><!--bold-->
-                    &lt;&gt; <!--add those entities to put some space between elements-->
-                    <span>MARSEILLE</span>
-                    &lt;&gt;
-                    <span>VELODROME</span>
-                    &lt;&gt;
-                    <button type="button">BUY TICKETS</button>
-                    <hr>
+                <div class="tour-row"><!--an additionnal div for each row-->
+                    <span class="tour-item tour-date">JUL 19</span>
+                    <span class="tour-item tour-city">MARSEILLE</span>
+                    <span class="tour-item tour-arena">VELODROME</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY TICKETS</button>
                 </div>
-                <div><!--an additionnal div for each row-->
-                    <strong>JUL 23</strong><!--bold-->
-                    &lt;&gt; <!--add those entities to put some space between elements-->
-                    <span>CAEN</span>
-                    &lt;&gt;
-                    <span>BEAUREGARD</span>
-                    &lt;&gt;
-                    <button type="button">BUY TICKETS</button>
+                <div class="tour-row"><!--an additionnal div for each row-->
+                    <span class="tour-item tour-date">JUL 23</span>
+                    <span class="tour-item tour-city">CAEN</span>
+                    <span class="tour-item tour-arena">BEAUREGARD</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY TICKETS</button>
                 </div>
             </div>
         </section>
-        <footer><!--bottom page section-->
-            <h3>Damso</h3>
-            <ul>
-                <li>
-                    <a href="https://youtube.com" target="_blank">
-                        <img src="images/YouTube Logo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://spotify.com" target="_blank">
-                    <img src="images/Spotify Logo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" target="_blank">
-                    <img src="images/Facebook Logo.png">
-                    </a>
-                </li>
-            </ul>
+        <footer class="main-footer"><!--bottom page section-->
+            <div class="container main-footer-container">
+                <h3 class="band-name">Damso</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spotify.com" target="_blank">
+                        <img src="images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                        <img src="images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>

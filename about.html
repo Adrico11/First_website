@@ -5,23 +5,25 @@
         <title>DAMSO | ABOUT</title><!--title of the tab-->
         <meta name="description" contents="This is the description"><!--here we add a description of the website shown 
         under the website's name in a google search-->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body><!--all the info to display (text, images...)-->
-        <header>
-            <nav> <!--navigation section-->
+        <header class="main-header">
+            <nav class="nav main-nav"> <!--navigation section-->
                 <ul><!--unordered list (ol for ordered list)-->
                     <li><a href="index.html">HOME</a></li><!--list items in the ul (or ol)-->
                     <li><a href="store.html">STORE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <hr><!--empty element for the horizontal rule (line)-->
-            <h1>Damso</h1><!--heading element of size 1 (largest)-->
+            <!--<hr>empty element for the horizontal rule (line) but better in CSS-->
+            <h1 class="band-name band-name-large">Damso</h1><!--heading element of size 1 (largest)-->
         </header>
         
-        <section><!--generic section of our page-->
-            <h2>ABOUT</h2>
+        <section class="content-section container"><!--generic section of our page-->
+            <h2 class="section-header">ABOUT</h2>
             <!--paragraph section-->
+            <img class="about-band-img" src="images/damso.jfif"> <!--image with source attribute = relative path-->
             <p>Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa 
                 (Zaïre, actuelle République démocratique du Congo), est un rappeur et auteur-compositeur-interprète belgo-congolais.
                 Actif dans le monde du rap depuis 2006, Damso débute dans la publication de 
@@ -29,7 +31,6 @@
                 carrière vraiment décoller en 2015, lorsqu'il est repéré par Booba. Il intègre 
                 alors le collectif et label 92i, et signe chez Universal Music France. Il est aussi 
                 connu pour son appartenance à la nouvelle vague du rap belge des années 2010 avec des artistes tels que Hamza ou Shay.</p>
-            <img src="images/damso_about.jpg"> <!--image with source attribute = relative path-->
             <p> Damso sort son premier album Batterie faible en 2016, certifié double disque de platine. 
                 Son second album Ipséité, sorti en 2017, connaît un grand succès en France et en Belgique. 
                 Il est certifié disque de diamant en France et disque de platine en Belgique. Son troisième album, 
@@ -38,25 +39,27 @@
                 Le 18 septembre 2020, il sort son album QALF, annoncé plusieurs fois, sans en dévoiler 
                 de véritables informations, mise à part le nom de ce projet. L'album est disque d'or en France 10 jours après sa sortie.</p>
         </section>
-        <footer><!--bottom page section-->
-            <h3>Damso</h3>
-            <ul>
-                <li>
-                    <a href="https://youtube.com" target="_blank">
-                        <img src="images/YouTube Logo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://spotify.com" target="_blank">
-                    <img src="images/Spotify Logo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" target="_blank">
-                    <img src="images/Facebook Logo.png">
-                    </a>
-                </li>
-            </ul>
+        <footer class="main-footer"><!--bottom page section-->
+            <div class="container main-footer-container">
+                <h3 class="band-name">Damso</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spotify.com" target="_blank">
+                        <img src="images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                        <img src="images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
